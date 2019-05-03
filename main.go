@@ -10,6 +10,8 @@ import (
 func main() {
 	d := &animal.Dog{}
 	t := &circus.Tamer{}
-	fmt.Println(circus.Perform(d)) // woof
-	fmt.Println(circus.Perform(t)) // WAT?
+	t2 := &circus.Tamer{}
+
+	fmt.Println(t.Command(circus.ActVoice, d))  // woof
+	fmt.Println(t.Command(circus.ActVoice, t2)) // WAT?
 }
