@@ -38,4 +38,8 @@ func (t *Tamer) Command(action int, a Animal) string {
 	return ""
 }
 
+func (t *Tamer) Praise(a Speaker) string {
+	return a.Speaks()
+}
+
 func Perform(a Speaker) string { return a.Speaks() }
