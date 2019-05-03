@@ -13,5 +13,5 @@ func main() {
 	t2 := &circus.Tamer{}
 
 	fmt.Println(t.Command(circus.ActVoice, d))  // woof
-	fmt.Println(t.Command(circus.ActVoice, t2)) // WAT?
+	fmt.Println(t.Command(circus.ActVoice, t2)) // Error: *circus.Tamer does not implement circus.Animal
 }

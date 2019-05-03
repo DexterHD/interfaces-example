@@ -10,6 +10,7 @@ type Speaker interface {
 
 type Animal interface {
 	Speaker
+	IsTrained() bool
 }
 
 type Tamer struct{}
