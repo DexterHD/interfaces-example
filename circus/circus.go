@@ -38,7 +38,7 @@ func (t *Tamer) Command(action int, a Animal) string {
 	return ""
 }
 
-func (t *Tamer) Praise(a Speaker) string {
+func (t *Tamer) Praise(a Animal) string {
 	return a.Speaks()
 }
 

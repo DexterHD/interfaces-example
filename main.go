@@ -15,5 +15,5 @@ func main() {
 
 	fmt.Println(t.Praise(d))  // woof
 	fmt.Println(t.Praise(c))  // meow!
-	fmt.Println(t.Praise(t2)) // WAT?
+	fmt.Println(t.Praise(t2)) // Error: *circus.Tamer does not implement circus.Animal
 }
