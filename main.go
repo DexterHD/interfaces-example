@@ -17,7 +17,7 @@ func main() {
 
 	t2 := &circus.Tamer{}
 	c := &animal.Cat{}
-	fmt.Println(t2.Command(circus.ActVoice, c)) // "meow"
-	fmt.Println(t2.Command(circus.ActJump, c))  // "meow!!"
-	fmt.Println(t2.Command(circus.ActSit, c))   // "meow!!!"
+	fmt.Println(t2.Command(circus.ActVoice, c)) // "panic: Sorry but this animal doesn't understand your commands"
+	fmt.Println(t2.Command(circus.ActJump, c))  // ...
+	fmt.Println(t2.Command(circus.ActSit, c))   // ...
 }

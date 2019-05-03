@@ -22,6 +22,11 @@ type Tamer struct{}
 func (t *Tamer) Speaks() string { return "WAT?" }
 
 func (t *Tamer) Command(action int, a Animal) string {
+	if !a.IsTrained() {
+		panic("Sorry but this animal doesn't understand your commands")
+		return ""
+	}
+
 	switch action {
 	case ActVoice:
 		return a.Speaks()
