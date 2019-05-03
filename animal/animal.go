@@ -1,9 +1,5 @@
 package animal
 
-type Animal interface {
-	Speaks() string
-}
-
 // implementation of Animal
 type Dog struct{}
 

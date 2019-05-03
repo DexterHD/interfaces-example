@@ -1,5 +1,7 @@
 package circus
 
-import "github.com/DexterHD/interfaces-example/animal"
+type Speaker interface {
+	Speaks() string
+}
 
-func Perform(a animal.Animal) string { return a.Speaks() }
+func Perform(a Speaker) string { return a.Speaks() }
