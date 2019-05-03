@@ -8,10 +8,16 @@ import (
 )
 
 func main() {
-	d := &animal.Dog{}
 	t := &circus.Tamer{}
-	t2 := &circus.Tamer{}
+	d := &animal.Dog{}
 
-	fmt.Println(t.Command(circus.ActVoice, d))  // woof
-	fmt.Println(t.Command(circus.ActVoice, t2)) // Error: *circus.Tamer does not implement circus.Animal
+	fmt.Println(t.Command(circus.ActVoice, d)) // "woof"
+	fmt.Println(t.Command(circus.ActJump, d))  // "jumps"
+	fmt.Println(t.Command(circus.ActSit, d))   // "sit"
+
+	t2 := &circus.Tamer{}
+	c := &animal.Cat{}
+	fmt.Println(t2.Command(circus.ActVoice, c)) // "meow"
+	fmt.Println(t2.Command(circus.ActJump, c))  // "meow!!"
+	fmt.Println(t2.Command(circus.ActSit, c))   // "meow!!!"
 }
