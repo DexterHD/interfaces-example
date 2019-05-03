@@ -3,17 +3,15 @@ package main
 import (
 	"fmt"
 
-	"github.com/DexterHD/interfaces-example/animal"
+	"github.com/DexterHD/interfaces-example/african"
 	"github.com/DexterHD/interfaces-example/circus"
 )
 
 func main() {
 	t := &circus.Tamer{}
-	t2 := &circus.Tamer{}
-	d := &animal.Dog{}
-	c := &animal.Cat{}
+	e := african.GetElephant()
 
-	fmt.Println(t.Praise(d))  // woof
-	fmt.Println(t.Praise(c))  // meow!
-	fmt.Println(t.Praise(t2)) // Error: *circus.Tamer does not implement circus.Animal
+	fmt.Println(t.Command(circus.ActVoice, e)) // "pawoo!"
+	fmt.Println(t.Command(circus.ActJump, e))  // "o_O"
+	fmt.Println(t.Command(circus.ActSit, e))   // "sit"
 }
