@@ -1,4 +1,5 @@
-# interfaces-example
+# Go interfaces as Abstract Data Types
 
-Some example how to use interfaces as abstract data types in Go.
-Originally used in my blog post: https://idexter.ru/how-to-use-go-interfaces-as-abstract-data-types/
+Nothing special to see here.
+It's just examples for my article about using Go interfaces as abstract data types (ADT).
+An article has been published at https://habr.com/ru/post/450386/ in May 2019 in Russian language.

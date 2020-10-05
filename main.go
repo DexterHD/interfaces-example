@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/DexterHD/interfaces-example/african"
-	"github.com/DexterHD/interfaces-example/circus"
+	"github.com/idexter/interfaces-example/african"
+	"github.com/idexter/interfaces-example/circus"
 )
 
 func main() {
